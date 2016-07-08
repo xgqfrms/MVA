@@ -1,12 +1,12 @@
-# markdown编辑器语法——字体、字号与颜色
+# markdown编辑器语法——字体、字号与颜色 
 
-## 设置字体
+## <font color=#0099ff size=7 face="黑体">我是字号72颜色#0099ff黑体字,color=#0099ff, size=72, face="黑体"</font>
 
-### font-face : x
+## 设置字体 <font face="黑体">
 
-## 设置字号
+## 设置字号 <font size=7>
 
-## 设置颜色
+## 设置颜色 <font color=#0099ff>
 
 ```markdown
     <font face="黑体">我是黑体字</font>
