@@ -2,9 +2,9 @@
 //Using Node.js Runtime
 // https://mva.microsoft.com/zh-cn/training-courses/-javascript--14430?l=YVFpNWj4B_9305918554
 
-function celebrityName(firstName) {
+function celebrityName(firstName){
     var nameIntro = "This celebrity is ";
-    function lastName(theLastName) {
+    function lastName(theLastName){
         console.log(nameIntro + firstName + "\." + theLastName);
     }
     return lastName;
@@ -16,7 +16,7 @@ myName("abc3");//参数 theLastName，闭包执行
 myName("UFO4");//参数 theLastName，闭包执行
 
 
-function showName(firstName,lastName) {
+function showName(firstName,lastName){
     var nameIntro = "Your name is ";
     function makeFullName() {//enclosure
         return nameIntro + firstName + "\." + lastName;
@@ -26,3 +26,20 @@ function showName(firstName,lastName) {
 console.log(showName("xgq","frms"));
 // var fullName = showName("xgq","frms");
 // console.log(fullName);
+
+function theLocation(){
+    var city = "San Francisco";
+    return{
+        get: function(){
+            console.log(city);
+        },
+        set: function(newCity){
+            city = newCity;
+        }
+    }
+}
+
+var myPlace = theLocation();
+myPlace.get();
+myPlace.set("Oakland");
+myPlace.get();
