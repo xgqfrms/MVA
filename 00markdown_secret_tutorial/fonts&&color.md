@@ -2,7 +2,7 @@
 
 ## 设置字体
 
-### font-face
+### font-face : x
 
 ## 设置字号
 
