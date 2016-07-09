@@ -31,7 +31,5 @@ student.sayHello();
 
 //instanceof  ? ture : false
 console.log(student instanceof Person);
-console.log("\n");
 console.log(student instanceof Student);
-
 
