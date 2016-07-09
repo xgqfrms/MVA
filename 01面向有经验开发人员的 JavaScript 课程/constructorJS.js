@@ -5,13 +5,14 @@ function Fruit(name,color){
 
     this.type = function(){
         console.log("Hi, I am a fruit!");
+        return "type!";
     }
 
     this.name = name;
     this.color = color;
 }
 
-var orange = new Fruit("orange","orange color");//
-console.log(orange.type);
+var orange = new Fruit("orange","orange color");//instantiated
+orange.type();
 console.log(orange);
 

@@ -1,17 +1,10 @@
 // 
 
-function Fruit(name,color){
-    console.log("Object created by constructor!");
-
-    this.type = function(){
-        console.log("Hi, I am a fruit!");
-    }
-
-    this.name = name;
-    this.color = color;
+var vegetable = function(){
+    this.type = "veggie";
+}
+vegetable.prototype.print = function(){
+    console.log(this.type + " is god for your health!");
 }
 
-var orange = new Fruit("orange","orange color");//
-console.log(orange.type);
-console.log(orange);
-
+var carrot = new vegetable();
