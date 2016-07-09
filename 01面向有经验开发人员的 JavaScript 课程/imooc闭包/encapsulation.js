@@ -1,3 +1,4 @@
+"use strict";
 // 封装
 
 (function(){
@@ -18,9 +19,9 @@
     window.export = myExport;
 }());
 
-myExport.getUserId();
-myExport.getTypeId();
-myExport._userId;
-myExport._typeId;
-myExport.converter;
+myExport.getUserId();//123456
+myExport.getTypeId();//item
+myExport._userId;//undefined
+myExport._typeId;//undefined
+myExport.converter;//undefined
 
