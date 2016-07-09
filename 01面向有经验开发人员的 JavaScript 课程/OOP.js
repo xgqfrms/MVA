@@ -52,3 +52,13 @@ var xyz = collegeAlg.textBook();//output
 
 console.log("\t"+abc);// undefined
 console.log("\t"+xyz);// undefined
+
+console.log("\nDemo modify:");
+// modify attribute === 重新赋值 
+collegeAlg.difficulty = "super easy!";
+console.log(collegeAlg);
+
+
+console.log("\nDemo delete:");
+delete collegeAlg.difficulty;//inherited can not be deleted
+console.log(collegeAlg);
